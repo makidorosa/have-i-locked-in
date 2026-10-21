@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+[data-lockin] { font-family: 'Poppins', ui-sans-serif, system-ui, sans-serif; }
+[data-lockin] button, [data-lockin] input, [data-lockin] select, [data-lockin] textarea { font-family: inherit; }
+/* Follow the selected accent instead of Tailwind's default lime. */
+[data-lockin] .bg-lime-400 { background-color: var(--lock-accent) !important; }
+[data-lockin] .text-lime-400, [data-lockin] .text-lime-300 { color: var(--lock-accent) !important; }
+[data-lockin] .border-lime-400 { border-color: var(--lock-accent) !important; }
+[data-lockin] .hover\:border-lime-400:hover { border-color: var(--lock-accent) !important; }
+[data-lockin] .border-lime-400\/30 { border-color: color-mix(in srgb,var(--lock-accent) 30%, transparent) !important; }
+[data-lockin] .bg-lime-400\/10 { background-color: color-mix(in srgb,var(--lock-accent) 10%, transparent) !important; }
+[data-lockin] .text-zinc-950.bg-lime-400, [data-lockin] .bg-lime-400.text-zinc-950 { color: var(--lock-accent-foreground) !important; }
+/* Light palette for the original dark-first component. */
+[data-lockin][data-mode="light"] { background: #f4f6fa !important; color: #17212e !important; color-scheme: light; }
+[data-lockin][data-mode="dark"] { color-scheme: dark; }
+[data-lockin][data-mode="light"] .bg-zinc-950 { background-color: #ffffff !important; }
+[data-lockin][data-mode="light"] .bg-zinc-900 { background-color: #ffffff !important; }
+[data-lockin][data-mode="light"] .bg-zinc-800 { background-color: #e8edf4 !important; }
+[data-lockin][data-mode="light"] .bg-zinc-700 { background-color: #dbe2ec !important; }
+[data-lockin][data-mode="light"] .border-zinc-800 { border-color: #d8e0ea !important; }
+[data-lockin][data-mode="light"] .border-zinc-700 { border-color: #c5cfdd !important; }
+[data-lockin][data-mode="light"] .border-zinc-600 { border-color: #a8b7c7 !important; }
+[data-lockin][data-mode="light"] .text-zinc-100, [data-lockin][data-mode="light"] .text-zinc-200 { color: #17212e !important; }
+[data-lockin][data-mode="light"] .text-zinc-300 { color: #344156 !important; }
+[data-lockin][data-mode="light"] .text-zinc-400 { color: #53647a !important; }
+[data-lockin][data-mode="light"] .text-zinc-500 { color: #66778b !important; }
+[data-lockin][data-mode="light"] .text-zinc-600 { color: #748399 !important; }
+[data-lockin][data-mode="light"] .text-white, [data-lockin][data-mode="light"] .hover\:text-white:hover { color: #17212e !important; }
+[data-lockin][data-mode="light"] .from-zinc-900 { --tw-gradient-from: #ffffff var(--tw-gradient-from-position) !important; }
+[data-lockin][data-mode="light"] .via-zinc-900 { --tw-gradient-via: #ffffff var(--tw-gradient-via-position) !important; }
+[data-lockin][data-mode="light"] .to-emerald-950\/40 { --tw-gradient-to: #f0f4fa var(--tw-gradient-to-position) !important; }
+[data-lockin][data-mode="light"] .bg-lime-400 { background-color: var(--lock-accent) !important; color: var(--lock-accent-foreground) !important; }
+[data-lockin][data-mode="light"] input, [data-lockin][data-mode="light"] select, [data-lockin][data-mode="light"] textarea { color: #17212e; }
+[data-lockin][data-mode="light"] input::placeholder { color: #748399; }
+
+[data-lockin] h1 { color: var(--lock-accent); }
